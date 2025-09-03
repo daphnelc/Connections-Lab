@@ -11,27 +11,37 @@ body {
 }
 
 .center {
-  display: block; 
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
 
+.ruler {
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+}
 
 .image {
-    margin-bottom: 50px;
-}    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .imageinfo {
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .paragraph {
     width: 100%;
     max-width: 900px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 h1 {
     text-align: center;
@@ -49,10 +59,10 @@ h2 {
 
 h3 {
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
     font-family: 'Treadstone';
     color: #000000;
-    margin: 0px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -61,4 +71,8 @@ p {
     font-family: 'Treadstone';
     margin-bottom: 10px;
     color: #000000;
+}
+
+.credit{
+    margin-top: 200px;
 }
