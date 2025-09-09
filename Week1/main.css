@@ -1,0 +1,115 @@
+html,
+body {
+    margin: 0;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    /* image stays in place */
+    background-size: cover;
+    /* scale to fill screen */
+    background-repeat: no-repeat;
+    /* prevent tiling */
+    background-position: top;
+    /* center the image */
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('TTNorms.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+    margin-left: 130px;
+}
+
+.navigation_bar {
+    width: 92%;
+    height: 7.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.selection1 {
+    width: 40%;
+    display: inline;
+}
+
+.selection2 {
+    width: 25%;
+    display: inline;
+}
+
+a {
+    color: #2e3192;
+    /* normal text color */
+    text-decoration: none;
+    /* removes underline */
+}
+
+a:hover {
+    color: #2e3192;;
+    /* change color on hover */
+    text-decoration: underline;
+    /* optional: add underline back */
+}
+
+.content {
+    max-width: 90%;
+    padding-left: 50px;
+}
+
+h1 {
+    color: #2e3192;
+    text-align: left;
+    font-size: 100px;
+    font-family: 'MyFont';
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'MyFont';
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+h3 {
+    color: #2e3192;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'MyFont';
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.element {
+    animation: nudge 30s linear infinite alternate;
+}
+
+@keyframes nudge {
+    0% {
+        transform: translate(0, -50px);
+    }
+
+    100% {
+        transform: translate(800px, -300px);
+    }
+}
+
+
+html,
+body {
+    height: 100%;
+}
