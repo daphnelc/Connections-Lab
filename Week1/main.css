@@ -4,7 +4,7 @@ body {
 }
 
 body {
-    background-image: url("background.jpg");
+    background-image: url("links/background.jpg");
     background-attachment: fixed;
     /* image stays in place */
     background-size: cover;
@@ -17,7 +17,7 @@ body {
 
 @font-face {
     font-family: 'MyFont';
-    src: url('TTNorms.ttf') format('truetype');
+    src: url('links/TTNorms.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
