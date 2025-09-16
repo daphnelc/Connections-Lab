@@ -1,0 +1,97 @@
+    <style> 
+    
+    :root {
+        --viewport-h: 70vh;
+    }
+
+    body {
+        background-image: url("links/mars.jpg");
+        background-size: cover;
+        /* scale to fill screen */
+        background-repeat: no-repeat;
+        /* prevent tiling */
+        background-position: 0% 0%;
+        /* start at top */
+        background-attachment: fixed;
+        /* image stays in place */
+
+    }
+
+/* This class is only added when the button is pressed */
+.animate {
+  animation: moveBg 5s linear forwards; 
+}
+
+@keyframes moveBg {
+  0% { background-position: 0 0; }
+  100%   { background-position: 0 -1000px; } /* background scrolls up */
+}
+
+    @font-face {
+        font-family: 'MyFont';
+        src: url('links/Barlow.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+   #sentence {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        color: #ffffff;
+        font-family: 'MyFont';
+        font-size: 4rem;
+        text-align: center;
+        white-space: normal;
+    }
+
+    button {
+        color: #ffffff;
+        background-color: transparent;
+        border:none;
+        font-family: 'MyFont';
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .section {
+        width: 100vw;
+        align-items: center;
+        /* center horizontally */
+    }
+
+    .story {
+        height: 87vh;
+        display: flex;
+        justify-content: center;
+        /* center horizontally */
+        align-items: center;
+        /* center vertically*/
+    }
+
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        /* stack vertically */
+        align-items: center;
+        /* center horizontally */
+    }
+
+    #arrow {
+        display: block;
+        /* removes inline-gap */
+    }
+
+    #clickButton {
+        margin: 0;
+        /* remove default h2 margins */
+        transition: font-size 0.3s ease;
+        cursor: pointer;
+    }
+
+    #clickButton:hover {
+        font-size: 2.2rem;
+        text-decoration: underline;
+    }
+
+    </style>
