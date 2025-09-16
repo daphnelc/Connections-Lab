@@ -1,7 +1,6 @@
-    <style> 
-    
-    :root {
+<style> :root {
         --viewport-h: 70vh;
+        /* determine view port height, so the user can't scoll */
     }
 
     body {
@@ -14,18 +13,25 @@
         /* start at top */
         background-attachment: fixed;
         /* image stays in place */
-
     }
 
-/* This class is only added when the button is pressed */
-.animate {
-  animation: moveBg 5s linear forwards; 
-}
+    /* this class is only added when the button is pressed */
+    .animate {
+        animation: moveBg 5s linear forwards;
+        /* linear fowards means to stay at the last frame */
+    }
 
-@keyframes moveBg {
-  0% { background-position: 0 0; }
-  100%   { background-position: 0 -1000px; } /* background scrolls up */
-}
+    @keyframes moveBg {
+        0% {
+            background-position: 0 0;
+            /* 0 frame: background at the top */
+        }
+
+        100% {
+            background-position: 0 -1000px;
+            /* 100 frame: background at the bottom, so it scrolls up */
+        }
+    }
 
     @font-face {
         font-family: 'MyFont';
@@ -34,7 +40,7 @@
         font-style: normal;
     }
 
-   #sentence {
+    #sentence {
         padding-left: 10vw;
         padding-right: 10vw;
         color: #ffffff;
@@ -47,7 +53,7 @@
     button {
         color: #ffffff;
         background-color: transparent;
-        border:none;
+        border: none;
         font-family: 'MyFont';
         font-size: 2rem;
         text-align: center;
@@ -89,6 +95,7 @@
         cursor: pointer;
     }
 
+    /* hover effect for button */
     #clickButton:hover {
         font-size: 2.2rem;
         text-decoration: underline;
