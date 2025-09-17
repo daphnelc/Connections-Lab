@@ -1,4 +1,4 @@
-<style> :root {
+:root {
         --viewport-h: 70vh;
         /* determine view port height, so the user can't scoll */
     }
@@ -101,4 +101,4 @@
         text-decoration: underline;
     }
 
-    </style>
+
