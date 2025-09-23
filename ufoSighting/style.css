@@ -1,0 +1,69 @@
+:root {
+    --viewport-h: 70vh;
+    /* determine view port height, so the user can't scoll */
+}
+
+body {
+    background-image: url("links/background.jpg");
+    background-size: cover;
+    /* scale to fill screen */
+    background-repeat: no-repeat;
+    /* prevent tiling */
+    background-position: 0% 0%;
+    /* start at top */
+    background-attachment: fixed;
+    /* image stays in place */
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('links/OCRBPro.ttf') format('truetype');
+    font-weight: thin;
+    font-style: normal;
+}
+
+.headline {
+    padding-top: 2%;
+
+}
+
+
+h1 {
+    color: #ffffff;
+    font-family: 'MyFont';
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    line-height: 1.5;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'MyFont';
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+.searchbar {
+    justify-content: center;
+    /* center horizontally */
+}
+
+p {
+    color: #ffffff;
+    font-family: 'MyFont';
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+.title {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically*/
+}
