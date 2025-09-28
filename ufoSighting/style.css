@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("links/background.jpg");
+    background-image: url('links/background.jpg');
     background-size: cover;
     /* scale to fill screen */
     background-repeat: no-repeat;
@@ -13,6 +13,11 @@ body {
     /* start at top */
     background-attachment: fixed;
     /* image stays in place */
+    cursor: url('links/ufocursor.png'), auto;
+}
+
+img:hover {
+    cursor: url('links/ufohover.png'), pointer;
 }
 
 @font-face {
@@ -24,14 +29,12 @@ body {
 
 .headline {
     padding-top: 2%;
-
 }
-
 
 h1 {
     color: #ffffff;
     font-family: 'MyFont';
-    font-size: 5rem;
+    font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2rem;
@@ -47,23 +50,76 @@ h2 {
     letter-spacing: 0.25rem;
 }
 
-.searchbar {
-    justify-content: center;
-    /* center horizontally */
-}
-
 p {
     color: #ffffff;
     font-family: 'MyFont';
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     text-align: left;
+    text-transform: uppercase;
 }
 
-.title {
-    height: 75vh;
+.body {
+    height: 80vh;
     display: flex;
     justify-content: center;
-    /* center horizontally */
     align-items: center;
-    /* center vertically*/
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3%;
+}
+
+textarea {
+    width: 10%;
+    padding: 0.75%;
+    font-family: 'MyFont';
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #ffffff;
+    resize: none;
+    /* no resizing for user */
+    outline: none;
+    /* remove default blue outline */
+    margin-right: 5px;
+    /* small gap between textarea and button */
+    height: 1.3rem;
+    line-height: 1;
+    /* reduce line height to minimize spacing */
+    overflow: hidden;
+    /* hide scrollbars since it's single line input */
+}
+
+/* when textarea is selected */
+textarea:focus {
+    border-color: rgb(180, 200, 255);
+    /* highlight border on focus */
+    box-shadow: 0 0 1rem rgba(180, 200, 255, 0.7);
+    /* glowing outline */
+}
+
+button {
+    font-family: 'MyFont';
+    background-color: transparent;
+    color: white;
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 0;
+    transition: background-color 0.3s;
+}
+
+/* animation to the ufo */
+@keyframes float {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
 }
